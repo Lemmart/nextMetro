@@ -1,0 +1,748 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "next metro",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GoToStationIntent",
+          "slots": [
+            {
+              "name": "toStation",
+              "type": "destination"
+            }
+          ],
+          "samples": [
+            "{toStation}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "West Hyattsville"
+              }
+            },
+            {
+              "name": {
+                "value": "West Falls Church-VT/UVA",
+                "synonyms": [
+                  "West Falls",
+                  "West Falls Church University of Virginia",
+                  "West Falls Church Virginia Tech",
+                  "West Falls Church UVA",
+                  "VT",
+                  "UVA",
+                  "West Falls Church VT UVA",
+                  "West Falls Church VT",
+                  "West Falls Church"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Waterfront",
+                "synonyms": [
+                  "the anthem",
+                  "the wharf",
+                  "Wharf"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Vienna/Fairfax-GMU",
+                "synonyms": [
+                  "Vienna Fairfax",
+                  "Vienna Fairfax GMU",
+                  "Vienna",
+                  "Fairfax",
+                  "Fairfax GMU"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Van Dorn Street",
+                "synonyms": [
+                  "Van Dorn"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "U Street/African-Amer civil war memorial/cardozo",
+                "synonyms": [
+                  "African American Civil War Memorial",
+                  "U Street African American Civil War Memorial ",
+                  "Cardozo",
+                  "U Street African American Civil War Memorial Cardozo",
+                  "U Street"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Suitland"
+              }
+            },
+            {
+              "name": {
+                "value": "Southern Avenue",
+                "synonyms": [
+                  "Southern Ave"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Shaw-Howard U",
+                "synonyms": [
+                  "Shaw Howard University",
+                  "Howard University",
+                  "Howard U",
+                  "Shaw"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Ronald Reagan Washington National Airport",
+                "synonyms": [
+                  "Reagan Airport",
+                  "Reagan National Airport",
+                  "Washington National Airport",
+                  "DCA",
+                  "National Airport",
+                  "Ronald Reagan Airport"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Prince George\u0027s Plaza",
+                "synonyms": [
+                  "Prince George\u0027s"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Pentagon City"
+              }
+            },
+            {
+              "name": {
+                "value": "Pentagon"
+              }
+            },
+            {
+              "name": {
+                "value": "New Carrollton"
+              }
+            },
+            {
+              "name": {
+                "value": "Naylor Road"
+              }
+            },
+            {
+              "name": {
+                "value": "Navy Yard-Ballpark",
+                "synonyms": [
+                  "Navy Yard Ballpark",
+                  "Baseball stadium",
+                  "Nats park",
+                  "Ballpark",
+                  "Navy Yard"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Mt Vernon sq 7th St-convention center",
+                "synonyms": [
+                  "Mount Vernon square seventh street convention center",
+                  "mount vernon convention center",
+                  "convention center",
+                  "mount vernon square seventh street",
+                  "mount vernon square",
+                  "mt vernon",
+                  "mount vernon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Minnesota Ave",
+                "synonyms": [
+                  "Minnesota",
+                  "Minnesota Avenue"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Landover"
+              }
+            },
+            {
+              "name": {
+                "value": "King St-Old Town",
+                "synonyms": [
+                  "King Street Alexandria",
+                  "Old Town Alexandria",
+                  "Old Town",
+                  "King Street"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Huntington"
+              }
+            },
+            {
+              "name": {
+                "value": "Greenbelt"
+              }
+            },
+            {
+              "name": {
+                "value": "Georgia Ave-Petworth",
+                "synonyms": [
+                  "Georgia",
+                  "Petworth",
+                  "Georgia Avenue",
+                  "Georgia Ave"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Franconia-Springfield",
+                "synonyms": [
+                  "Franconia Springfield",
+                  "Springfield",
+                  "Franconia"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Eisenhower Avenue",
+                "synonyms": [
+                  "Eisenhower"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dunn Loring-Merrifield",
+                "synonyms": [
+                  "Dunn Loring Merrifield",
+                  "Merrifield",
+                  "Dunn Loring"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Deanwood"
+              }
+            },
+            {
+              "name": {
+                "value": "Crystal City"
+              }
+            },
+            {
+              "name": {
+                "value": "Congress Heights"
+              }
+            },
+            {
+              "name": {
+                "value": "Columbia Heights"
+              }
+            },
+            {
+              "name": {
+                "value": "College Park-U of MD",
+                "synonyms": [
+                  "University of MD",
+                  "Maryland",
+                  "College Park University of MD",
+                  "College Park University of Maryland",
+                  "University of Maryland",
+                  "U of MD",
+                  "College Park"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Cheverly"
+              }
+            },
+            {
+              "name": {
+                "value": "Branch Ave",
+                "synonyms": [
+                  "Branch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Braddock Road",
+                "synonyms": [
+                  "Braddock"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Arlington Cemetery"
+              }
+            },
+            {
+              "name": {
+                "value": "Archives-Navy Memorial-Penn Quarter",
+                "synonyms": [
+                  "Archives-Penn Quarter",
+                  "Archives-Navy Memorial",
+                  "Penn Quarter",
+                  "Navy Memorial",
+                  "Archives"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Anacostia"
+              }
+            },
+            {
+              "name": {
+                "value": "Tenleytown-AU",
+                "synonyms": [
+                  "Tenleytown AU",
+                  "Tenley",
+                  "Tenleytown",
+                  "AU",
+                  "American",
+                  "American University"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Court House"
+              }
+            },
+            {
+              "name": {
+                "value": "Capitol South"
+              }
+            },
+            {
+              "name": {
+                "value": "Capitol Heights"
+              }
+            },
+            {
+              "name": {
+                "value": "Benning Road"
+              }
+            },
+            {
+              "name": {
+                "value": "Ballston-MU",
+                "synonyms": [
+                  "Ballston MU",
+                  "MU",
+                  "Marymount",
+                  "Marymount University",
+                  "Ballston"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Addison Road-Seat Pleasant",
+                "synonyms": [
+                  "Seat Pleasant",
+                  "Addison Road Seat Pleasant",
+                  "Addison Road"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Woodley Park-Zoo/Adams Morgan",
+                "synonyms": [
+                  "zoo",
+                  "Woodley Park Zoo Admo",
+                  "Woodley Park Zoo Adams Morgan",
+                  "Adams Morgan",
+                  "Woodley Park",
+                  "the zoo",
+                  "Admo",
+                  "Woodley"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "White Flint"
+              }
+            },
+            {
+              "name": {
+                "value": "Wheaton"
+              }
+            },
+            {
+              "name": {
+                "value": "Van Ness-UDC",
+                "synonyms": [
+                  "Van Ness UDC",
+                  "University of Washington DC",
+                  "University of DC",
+                  "Van ness"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Union Station",
+                "synonyms": [
+                  "megabus",
+                  "the train station",
+                  "Union"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Twinbrook"
+              }
+            },
+            {
+              "name": {
+                "value": "Takoma"
+              }
+            },
+            {
+              "name": {
+                "value": "Silver Spring"
+              }
+            },
+            {
+              "name": {
+                "value": "Shady Grove"
+              }
+            },
+            {
+              "name": {
+                "value": "Rockville"
+              }
+            },
+            {
+              "name": {
+                "value": "Rhode Island Ave-Brentwood",
+                "synonyms": [
+                  "Rhode Island Brentwood",
+                  "Brentwood",
+                  "Rhode Island Avenue",
+                  "Rhode Island Ave"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "NoMa-Gallaudet U",
+                "synonyms": [
+                  "NoMa Gallaudet U",
+                  "NoMa Gallaudet",
+                  "Gallaudet University",
+                  "NoMa"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Metro Center"
+              }
+            },
+            {
+              "name": {
+                "value": "Medical Center",
+                "synonyms": [
+                  "National Institutes of Health",
+                  "NIH"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Judiciary Square",
+                "synonyms": [
+                  "Judiciary"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Grosvenor-Strathmore",
+                "synonyms": [
+                  "Grosvenor Strathmore",
+                  "Strathmore",
+                  "Grosvenor"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Glenmont"
+              }
+            },
+            {
+              "name": {
+                "value": "Gallery Pl-Chinatown",
+                "synonyms": [
+                  "Gallery Place Chinatown",
+                  "the wizards",
+                  "basketball arena",
+                  "hockey arena",
+                  "the caps",
+                  "Capital One Arena",
+                  "Chinatown",
+                  "Gallery Place"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Friendship Heights"
+              }
+            },
+            {
+              "name": {
+                "value": "Fort Totten"
+              }
+            },
+            {
+              "name": {
+                "value": "Forest Glen"
+              }
+            },
+            {
+              "name": {
+                "value": "Farragut North"
+              }
+            },
+            {
+              "name": {
+                "value": "Dupont Circle"
+              }
+            },
+            {
+              "name": {
+                "value": "Cleveland Park"
+              }
+            },
+            {
+              "name": {
+                "value": "Brookland-CUA"
+              }
+            },
+            {
+              "name": {
+                "value": "Bethesda"
+              }
+            },
+            {
+              "name": {
+                "value": "Clarendon"
+              }
+            },
+            {
+              "name": {
+                "value": "East Falls Church"
+              }
+            },
+            {
+              "name": {
+                "value": "Eastern Market"
+              }
+            },
+            {
+              "name": {
+                "value": "Farragut West"
+              }
+            },
+            {
+              "name": {
+                "value": "Federal Center SW",
+                "synonyms": [
+                  "Federal Center"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Federal Triangle"
+              }
+            },
+            {
+              "name": {
+                "value": "Foggy Bottom-GWU",
+                "synonyms": [
+                  "Foggy Bottom GWU",
+                  "Foggy",
+                  "Foggy Bottom",
+                  "GW",
+                  "GWU",
+                  "George Washington University"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Greensboro"
+              }
+            },
+            {
+              "name": {
+                "value": "L\u0027Enfant Plaza",
+                "synonyms": [
+                  "L\u0027Enfant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Largo Town Center",
+                "synonyms": [
+                  "Largo"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "McLean"
+              }
+            },
+            {
+              "name": {
+                "value": "McPherson Square",
+                "synonyms": [
+                  "McPherson"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Morgan Boulevard"
+              }
+            },
+            {
+              "name": {
+                "value": "Potomac Ave",
+                "synonyms": [
+                  "Potomac"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Rosslyn"
+              }
+            },
+            {
+              "name": {
+                "value": "Smithsonian",
+                "synonyms": [
+                  "the Mall",
+                  "the National Mall"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Spring Hill"
+              }
+            },
+            {
+              "name": {
+                "value": "Stadium-Armory",
+                "synonyms": [
+                  "Stadium Armory"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Tysons Corner",
+                "synonyms": [
+                  "Tysons",
+                  "Tysons Mall"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Virginia Square-GMU",
+                "synonyms": [
+                  "Virginia Square GMU",
+                  "Virginia Square",
+                  "GMU",
+                  "George Mason University",
+                  "George Mason",
+                  "George Mason U"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Wiehle-Reston East",
+                "synonyms": [
+                  "Wiehle Reston East",
+                  "Wiehle",
+                  "Wheelie",
+                  "Reston",
+                  "Wheelie Reston"
+                ]
+              }
+            }
+          ],
+          "name": "destination"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}

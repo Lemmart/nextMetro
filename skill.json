@@ -1,0 +1,95 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Next Metro finds you the next trains leaving from stations near you to your destination and includes how long you until they depart!",
+          "examplePhrases": [
+            "Alexa, open next metro",
+            "Alexa, next metro"
+          ],
+          "keywords": [
+            "Washington",
+            "DC",
+            "metro",
+            "trip",
+            "planner",
+            "map",
+            "subway",
+            "train",
+            "schedule",
+            "directions",
+            "underground",
+            "transport",
+            "time"
+          ],
+          "name": "Next Metro",
+          "description": "Always cutting it close? Rushing out of the door? Hoping to not miss that next metro train? Try Next Metro! Great for commuting, running errands, or simply heading to a friend\u0027s, we use a combination of device location and Google Maps to find you the train leaving soonest for your destination and report the departure time and how long you have until departure. Built for those who often feel like they\u0027re racing the train to the station or are looking for a bit more certainty in their day.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "en-US",
+            "language": "en"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "This skill is rather basic. You must grant permission for use of device location because this skill finds the next closest Washington D.C. metro train arriving near the user based on device location. It only needs the static device location. Otherwise, no further permissions are required. This skill is audio only.\n\nTo test, you can simply say \"Next metro\" or \"Alexa, next metro\". When prompted by the \"Where to?\" response, valid answers currently include all Washington D.C. WMATA Red line stations (https://www.wmata.com/rider-guide/stations/index.cfm?rail\u003dred). The skill takes the requested station and uses google directions API to determine the closest metro train leaving from near the user\u0027s address. This skill handles edge cases where no routes exists by explaining this to the user and saying that no routes were found. This may cause difficulty in test environments because I found that the online Alexa skills kit console is not able to simulate a device ID with a valid location so I had to use my phone-based Alexa and/or my physical Alexa Echo Dot. \n\nThis interaction of \"Next metro\" to \"where to\" to a valid station is the extent of the skill. Edge cases including invalid destinations (e.g. another address and not a station name) are covered by applicable error handling.",
+      "category": "NAVIGATION_AND_TRIP_PLANNER",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:365339359862:function:7ceba22e-11b9-4bc9-b995-fb52d344877a:Release_3"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:365339359862:function:7ceba22e-11b9-4bc9-b995-fb52d344877a:Release_3"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:365339359862:function:7ceba22e-11b9-4bc9-b995-fb52d344877a:Release_3"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:365339359862:function:7ceba22e-11b9-4bc9-b995-fb52d344877a:Release_3"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::devices:all:address:full:read"
+      },
+      {
+        "name": "alexa::person_id:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://nextmetro.s3.amazonaws.com/termsOfUse.pdf",
+          "privacyPolicyUrl": "https://nextmetro.s3.amazonaws.com/privacyPolicy.pdf"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": true
+    }
+  }
+}
